@@ -1,0 +1,120 @@
+/* Premium Glassmorphism Recipe Home Page */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Glassmorphism Container */
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(51, 51, 51, 0.8);
+  backdrop-filter: blur(10px);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 0 0 15px 15px;
+}
+
+.navbar a,
+.navbar button {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 20px;
+  margin: 0 10px;
+  border-radius: 30px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar button:hover {
+  background-color: #ff6347;
+  transform: scale(1.1);
+}
+
+/* Button Styling */
+button {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  padding: 14px;
+  width: 100%;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff5f6d, #ffc371);
+  transform: scale(1.06);
+  box-shadow: 0px 8px 20px rgba(255, 95, 109, 0.5);
+}
+
+/* Recipe List */
+.recipe-list {
+  list-style: none;
+  padding: 0;
+}
+
+.recipe-item {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  margin: 20px 0;
+  padding: 18px;
+  border-radius: 20px;
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.recipe-item:hover {
+  transform: scale(2);
+}
+
+/* Image Styling */
+.recipe-item img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

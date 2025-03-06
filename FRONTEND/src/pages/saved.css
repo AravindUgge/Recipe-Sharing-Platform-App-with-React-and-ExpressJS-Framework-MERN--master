@@ -1,0 +1,126 @@
+/* Best CSS Ever - Stunning and Modern Recipe & Home Page */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
+  }
+  
+  .create-recipe, .home, .saved-recipes {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  h1, h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #444;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #ff758c;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(255, 117, 140, 0.5);
+  }
+  
+  button {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    transform: scale(1.05);
+  }
+  
+  button[type="button"] {
+    background: transparent;
+    color: #ff758c;
+    font-weight: bold;
+    border: 2px solid #ff758c;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  button[type="button"]:hover {
+    background: #ff758c;
+    color: white;
+  }
+  
+  /* Home & Saved Recipes List */
+  .home ul, .saved-recipes ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .home li, .saved-recipes li {
+    background: white;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .home li:hover, .saved-recipes li:hover {
+    transform: scale(1.02);
+  }
+  
+  .home img, .saved-recipes img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  .home .instructions, .saved-recipes .instructions {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .create-recipe, .home, .saved-recipes {
+      padding: 1.5rem;
+    }
+  
+    input, textarea {
+      font-size: 0.9rem;
+    }
+  }
+  
